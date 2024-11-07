@@ -4,7 +4,7 @@ import base64
 
 
 # Program Designed for basic encryption of generated authentication tables.
-
+# CAUTION: Basice Encryption Tool in use, Ensure secure data transfer.
 
 # Function to encrypt text
 def encrypt():
