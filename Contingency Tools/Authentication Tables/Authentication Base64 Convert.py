@@ -4,7 +4,6 @@ import base64
 
 
 # Program Designed for basic encryption of generated authentication tables.
-#CAUTION: Basic Encryption method in use, Ensure secure data transfer!
 
 
 # Function to encrypt text
