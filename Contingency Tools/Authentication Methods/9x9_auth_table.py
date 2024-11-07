@@ -5,13 +5,14 @@ import datetime
 # Programmed to iterate random alphanumerical tables to use for authentication on communication channels.
 
 # Please note that a random table will be generated upon each execution. Document immediately after generation.
-print(f'\nTable Serial # <<{datetime.datetime.now()}>>\n')
+print(f'\nAuthentication Code # <<{datetime.datetime.now()}>>\n')
 
 def generate_random_value():
     """Generates a random alphanumeric value (letter + digit)."""
     letter = random.choice(string.ascii_uppercase)  # Random letter (A-Z)
-    digit = random.choice(string.digits)  # Random digit (0-9)
-    return letter + digit
+    digit1 = random.choice(string.digits)  # Random digit (0-9)
+    digit2 = random.choice(string.digits)  # Random Digit (0-9)
+    return letter + digit1 + digit2
 
 
 def create_auth_table():
@@ -49,4 +50,3 @@ print_auth_table(auth_table)
 
 
 print("\nWARNING: Regenerate tables to prevent leakage of confirmation data\n")
-Print("")
