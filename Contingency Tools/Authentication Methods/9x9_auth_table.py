@@ -49,4 +49,4 @@ auth_table = create_auth_table()
 print_auth_table(auth_table)
 
 
-print("\nWARNING: Regenerate tables to prevent leakage of confirmation data\n")
+print("\nWARNING: Regenerate tables to prevent data leakage\n")
