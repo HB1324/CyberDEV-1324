@@ -87,7 +87,7 @@ def game():
         # Test Quadratic Formula
         # Parameters for the probability formula
         base_prob = 0.01  # Starting probability
-        scaling_factor = 0.002  # Rate of probability increase
+        scaling_factor = 0.001  # Rate of probability increase
 
         # Generate new obstacles
         if random.random() < base_prob + scaling_factor * math.log(score + 1):
