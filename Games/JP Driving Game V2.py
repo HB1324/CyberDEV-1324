@@ -131,7 +131,7 @@ def game():
             pygame.draw.rect(screen, RED, (obstacle[0], obstacle[1], obstacle_width, obstacle_height))
 
         # Display the score
-        score_text = font.render(f"Score: {score}", True, BLACK)
+        score_text = font.render(f"Score:        {score}", True, BLACK)
         screen.blit(score_text, (10, 10))
 
         # Update the display
