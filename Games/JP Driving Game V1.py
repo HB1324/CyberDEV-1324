@@ -90,13 +90,11 @@ def game_loop():
 
         # Generate new obstacles
 
-        # 0-30 Seconds
-        if random.random() < 0.01:  # 2% chance to generate a new obstacle each frame
-            obstacles.append(Obstacle())
-
-        elif score > 3000:
-            if random.random() < 0.025:  # 2% chance to generate a new obstacle each frame
-                obstacles.append(Obstacle())
+        # Difficulty Parameter
+        if score >= 0 and random.random() < 0.001: obstacles.append(Obstacle())
+        elif score > 1000 and random.random() < 0.002: obstacles.append(Obstacle())
+        elif score > 2000 and random.random() < 0.003: obstacles.append(Obstacle())
+        elif score > 3000 and random.random() < 0.004: obstacles.append(Obstacle())
 
         # Move obstacles
         for obstacle in obstacles:
