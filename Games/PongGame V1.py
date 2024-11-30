@@ -17,7 +17,7 @@ class PongGame:
         self.paddle_speed = 10
         # Adjust for smooth movement
         self.min_ball_speed = 5
-        self.max_ball_speed = 20
+        self.max_ball_speed = 25
         self.game_active = False
 
         # Paddle movement states
@@ -62,7 +62,7 @@ class PongGame:
 
         # Ball speed
         self.ball_speed = simpledialog.askinteger(
-            "Ball Speed", "Enter ball speed (5-20):", minvalue=5, maxvalue=20, initialvalue=7
+            "Ball Speed", "Enter ball speed (5-20):", minvalue=5, maxvalue=25, initialvalue=10
         )
 
         # Paddle speed
