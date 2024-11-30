@@ -93,7 +93,7 @@ def game():
 
         # Generate new obstacles
         base_prob = 0.01  # Starting probability
-        scaling_factor = 0.001  # Rate of probability increase
+        scaling_factor = 0.002  # Rate of probability increase
         if random.random() < base_prob + scaling_factor * math.log(score + 1):
             new_obstacle_lane = random.randint(0, 3)
             new_obstacle_x = new_obstacle_lane * lane_width + (lane_width - obstacle_width) // 2
