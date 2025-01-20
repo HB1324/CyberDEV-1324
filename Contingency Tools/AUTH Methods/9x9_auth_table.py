@@ -5,7 +5,7 @@ import datetime
 # Programmed to iterate random alphanumerical tables to use for authentication on communication channels.
 
 # Please note that a random table will be generated upon each execution. Document immediately after generation.
-print(f'\nAuthentication Code # <<{datetime.datetime.now()}>>\n')
+print(f'\nAuthentication Code SN# <<{datetime.datetime.now()}>>\n')
 
 def generate_random_value():
     """Generates a random alphanumeric value (letter + digit)."""
